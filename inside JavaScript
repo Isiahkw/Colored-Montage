@@ -1,0 +1,17 @@
+  var ledArray = [1,1,1,1,1,1,1,1,1,1,1,1];
+  function ledParse(ledArray){
+    for(var i = 0; i<ledArray.length; i++){
+      ledArray[i] = ledArray[i]+1; // initial change
+      console.log(ledArray.toString());
+    }
+    for(var j = ledArray.length-1; j>-1; j--){ //changing back
+      ledArray[j] = ledArray[j]-1;
+      console.log(ledArray.toString());
+    }
+    }
+      function infiniteRunTime(){ //never ending loop
+        for(var k = 0; k<1; k--){
+          ledParse(ledArray);
+          }
+          }
+          infiniteRunTime();

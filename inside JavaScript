@@ -1,4 +1,8 @@
-  var ledArray = [1,1,1,1,1,1,1,1,1,1,1,1];
+ i = Dark Cyan
+ j = Light Magenta
+ 
+ 
+ var ledArray = [1,1,1,1,1,1,1,1,1,1,1,1];
   function ledParse(ledArray){
     for(var i = 0; i<ledArray.length; i++){
       ledArray[i] = ledArray[i]+1; // initial change

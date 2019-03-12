@@ -18,4 +18,4 @@
     setColor(255, 0, 255);  // Magenta
     delay(1000);
     }
-    for(;;) //infitnite runtime throughout the code
+    for(;;); //infitnite runtime throughout the code

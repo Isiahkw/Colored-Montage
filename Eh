@@ -8,7 +8,14 @@
       }
       void loop(){
         for(i=0; i<NUM_LEDS; i++){
-        leds[i]= CRGB::Dark Cyan;
-        FastLED.show();
-        delay(55); 
-        }
+        leds[i]= 135
+        void loop()
+{
+     setColor(0, 255, 255);  // Aqua
+     delay(1000);
+    setColor(0, 139, 139);  // Dark Cyan
+    delay(1000);
+    setColor(255, 0, 255);  // Magenta
+    delay(1000);
+    }
+    for(;;) //infitnite runtime throughout the code

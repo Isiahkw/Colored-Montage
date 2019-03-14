@@ -1,21 +1,26 @@
-#include <FastLed.h>
-#define NUM_LEDS 135
+#include <FastLED.h>
+#define NUM_LEDS 134
 #define DATA_PIN 11
 
     CRGB leds[NUM_LEDS];
     void setup(){
-      FastLed.addLeds<WS2812B, DATA_PIN(leds,NUM_LEDS);
+     
+      FastLED.addLeds<WS2812B, DATA_PIN,  GRB>(leds,NUM_LEDS);
       }
       void loop(){
-        for(i=0; i<NUM_LEDS; i++){
-        leds[i]= 135
-        void loop()
-{
-     setColor(0, 255, 255);  // Aqua
+        for(int i=0; i<NUM_LEDS; i++){
+        leds[NUM_LEDS]= NUM_LEDS;
+        
+
+     fill_solid(leds, NUM_LEDS, leds[i]= 0x00FFFF);  // Aqua
+     FastLED.show();
      delay(1000);
-    setColor(0, 139, 139);  // Dark Cyan
+    
+    
+    fill_solid(leds, NUM_LEDS, leds[i]= 0xCA1F7B);  // Magenta
+    FastLED.show();
     delay(1000);
-    setColor(255, 0, 255);  // Magenta
-    delay(1000);
-    }
-    for(;;); //infitnite runtime throughout the code
+        }
+      }
+      
+    
